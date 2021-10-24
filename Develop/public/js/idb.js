@@ -16,7 +16,6 @@ request.onsuccess = function (event) {
     // when db is successfully created with its object store (from onupgradedneeded event above)
     // or simply established a connection, save reference to db in global variable
     db = event.target.result;
-    console.log("db", db)
     // check if app is online, if yes run  function to send all local db data to api
     if (navigator.onLine) {
         // we haven't created this yet, but we will soon, so let's comment it out for now
